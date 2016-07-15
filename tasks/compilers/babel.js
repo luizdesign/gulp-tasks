@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import babel from 'gulp-babel';
 
-module.exports = function (blob, babelConfig, distFolder) {
+export default function babelCompiler (blob, babelConfig, distFolder) {
     return blob
         .pipe(
             babel(babelConfig)
